@@ -58,7 +58,7 @@ em {
   top: 0;
   z-index: 0;
   right: 0;
-  background: linear-gradient(270deg, #181818 0%, rgba(7, 7, 7, 0.3) 100%);
+  background: linear-gradient(270deg, #060D17 0%, #060d174d 100%);
 }
 
 .main-slider .background-movie::before{
@@ -70,7 +70,7 @@ em {
   z-index: 0;
   right: 0;
   left: 0;
-  background-image: linear-gradient(rgba(24, 29, 37, 0) 50%, rgba(24, 29, 37, 0.5) 70%, rgba(24, 29, 37, 0.9) 90%, rgb(24, 29, 37));
+  background-image: linear-gradient(rgba(24, 29, 37, 0) 50%, rgba(24, 29, 37, 0.5) 70%, #060d17e6 90%, #060D17);
 }
 
 .main-slider .container-fluid {
@@ -178,7 +178,7 @@ em {
 .swiper-logos {
   width: max-content;
   position: absolute;
-  bottom: 15px;
+  bottom: 5px;
   left: 0;
   right: 0;
   padding-bottom: 10px;
