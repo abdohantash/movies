@@ -13,6 +13,77 @@
 </head>
 
 <body>
+  <header class="header-box">
+    <div class="container-fluid">
+      <div class="inner-nav">
+        <a href="#" class="logo-head">
+          <img src="https://www.justwatch.com/appassets/img/logo/JustWatch-logo-small.webp" alt="">
+        </a>
+        <ul class="navbar-box">
+          <li>
+            <a href="#">
+              الرئيسية
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              الأفلام
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              المسلسلات
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              عروض المصارعة
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              تصنيفات
+            </a>
+          </li>
+        </ul>
+        <div class="left-head">
+          <button class="btn-search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+              fill="none">
+              <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <a href="#" class="login-btn">تسجيل الدخول</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-box">
+    <div class="flex-box">
+      <div class="input-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+          <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+        </svg>
+        <input type="text" placeholder="ابحث عن فيلم , مسلسل">
+      </div>
+      <button class="close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+          <path d="M19.0005 4.99988L5.00045 18.9999M5.00045 4.99988L19.0005 18.9999" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        خروج
+      </button>
+    </div>
+  </div>
 
   <div class="main-slider">
     <div class="swiper swiper-poster">
@@ -21,7 +92,10 @@
           <div class="background-movie" style="background-image: url('assets/images/movies/avengers.jpg')">
             <div class="container-fluid">
               <div class="slider-content">
+                <!-- لو الفيلم ليه لوجو -->
                 <img src="assets/images/movies/avengers.png" alt="logo" data-swiper-parallax="-900">
+                <!-- لو الفيلم ملوش لوجو -->
+                <!-- <h2 data-swiper-parallax="-900">Better call saul</h2> -->
                 <div class="content-meta" data-swiper-parallax="-900">
                   <span>
                     <i class="bi bi-star-fill"></i> 8.0
@@ -43,21 +117,32 @@
                     </svg>
                   </span>
                   <span>2023</span>
-                  <span>2 ساعة 23 دقيقة<em>الخيال العلمي</em></span>
+                  <span>2 ساعة 23 دقيقة<em>netflix</em></span>
                 </div>
-                <p class="desc-movie" data-swiper-parallax="-900">عندما يبرز عدو غير متوقع ويهدد سلامة وأمن العالم، نيك فوري، مدير وكالة حفظ السلام الدولية المعروفة باسم .S.H.I.E.L.D ، يجد نفسه في حاجة إلى فريق يسحب العالم من حافة الكارثة. من مختلف أنحاء العالم، يبدأ جهد التوظيف</p>
-                <div data-swiper-parallax="-900">
-                  <a href="#" class="btn--primary watch-btn">
-                    <i class="bi bi-play-circle"></i>
-                    مشاهدة
+                <div class="btns-box" data-swiper-parallax="-900">
+                  <a href="#" class="watch-btn">
+                    <i class="bi bi-play"></i>
+                    مشاهدة الآن
                   </a>
+                  <button class="add-to-list">
+                    <i class="bi bi-plus-lg"></i>
+                    قائمتي
+                  </button>
+                </div>
+                <p class="desc-movie" data-swiper-parallax="-900">عندما يبرز عدو غير متوقع ويهدد سلامة وأمن العالم، نيك
+                  فوري، مدير وكالة حفظ السلام الدولية المعروفة باسم .S.H.I.E.L.D ، يجد نفسه في حاجة إلى فريق يسحب العالم
+                  من حافة الكارثة. من مختلف أنحاء العالم، يبدأ جهد التوظيف</p>
+                <div class="content-meta" data-swiper-parallax="-900">
+                  <span>الخيال العلمي</span>
+                  <span>حركة ومغامرة</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="background-movie" style="background-image: url('assets/images/movies/war_for_the_planet_of_the_apes.jpg')">
+          <div class="background-movie"
+            style="background-image: url('assets/images/movies/war_for_the_planet_of_the_apes.jpg')">
             <div class="container-fluid">
               <div class="slider-content">
                 <img src="assets/images/movies/war-for-the-planet-of-the-apes.png" alt="" data-swiper-parallax="-900">
@@ -82,14 +167,25 @@
                     </svg>
                   </span>
                   <span>2023</span>
-                  <span>2 ساعة 20 دقيقة<em>غموض وإثارة</em></span>
+                  <span>2 ساعة 20 دقيقة<em>netflix</em></span>
                 </div>
-                <p class="desc-movie" data-swiper-parallax="-900">يضطر قيصر وقروده إلى صراع مميت مع جيش من البشر بقيادة عقيد لا يرحم. بعد أن تعاني القردة من خسائر لا يمكن تصورها ، يتصارع قيصر مع غرائزه المظلمة ويبدأ سعيه الأسطوري للانتقام من نوعه. بينما تضعهم الرحلة أخيرا وجها لوجه ، يتنافس قيصر والعقيد ضد بعضهما البعض في معركة ملحمية ستحدد مصير كل من نوعهما ومستقبل الكوكب</p>
-                <div data-swiper-parallax="-900">
-                  <a href="#" class="btn--primary watch-btn">
-                    <i class="bi bi-play-circle"></i>
-                    مشاهدة
+                <div class="btns-box" data-swiper-parallax="-900">
+                  <a href="#" class="watch-btn">
+                    <i class="bi bi-play"></i>
+                    مشاهدة الآن
                   </a>
+                  <button class="add-to-list">
+                    <i class="bi bi-plus-lg"></i>
+                    قائمتي
+                  </button>
+                </div>
+                <p class="desc-movie" data-swiper-parallax="-900">يضطر قيصر وقروده إلى صراع مميت مع جيش من البشر بقيادة
+                  عقيد لا يرحم. بعد أن تعاني القردة من خسائر لا يمكن تصورها ، يتصارع قيصر مع غرائزه المظلمة ويبدأ سعيه
+                  الأسطوري للانتقام من نوعه. بينما تضعهم الرحلة أخيرا وجها لوجه ، يتنافس قيصر والعقيد ضد بعضهما البعض في
+                  معركة ملحمية ستحدد مصير كل من نوعهما ومستقبل الكوكب</p>
+                <div class="content-meta" data-swiper-parallax="-900">
+                  <span>الخيال العلمي</span>
+                  <span>حركة ومغامرة</span>
                 </div>
               </div>
             </div>
@@ -121,14 +217,25 @@
                     </svg>
                   </span>
                   <span>2014</span>
-                  <span>2 ساعة 15 دقيقة<em>الحرب والجيش</em></span>
+                  <span>2 ساعة 15 دقيقة<em>netflix</em></span>
                 </div>
-                <p class="desc-movie" data-swiper-parallax="-900">في إبريل عام 1945 حينما كان الحلفاء يضعون لمساتهم الأخيرة على مسرح الأحداث الأوروبية، كان الخبير الحربي الرقيب واردادي (براد بيت) - وتحت قيادته طاقم من خمسة جنود - يقود دبابة من طراز (شيرمان) في مهمة انتحارية خلف خطوط العدو. رغم النقص في العدد والعدة لديهم أمام قوات ألمانيا النازية، إلا أنهم قاموا بدور بطولي للغاية</p>
-                <div data-swiper-parallax="-900">
-                  <a href="#" class="btn--primary watch-btn">
-                    <i class="bi bi-play-circle"></i>
-                    مشاهدة
+                <div class="btns-box" data-swiper-parallax="-900">
+                  <a href="#" class="watch-btn">
+                    <i class="bi bi-play"></i>
+                    مشاهدة الآن
                   </a>
+                  <button class="add-to-list">
+                    <i class="bi bi-plus-lg"></i>
+                    قائمتي
+                  </button>
+                </div>
+                <p class="desc-movie" data-swiper-parallax="-900">في إبريل عام 1945 حينما كان الحلفاء يضعون لمساتهم
+                  الأخيرة على مسرح الأحداث الأوروبية، كان الخبير الحربي الرقيب واردادي (براد بيت) - وتحت قيادته طاقم من
+                  خمسة جنود - يقود دبابة من طراز (شيرمان) في مهمة انتحارية خلف خطوط العدو. رغم النقص في العدد والعدة
+                  لديهم أمام قوات ألمانيا النازية، إلا أنهم قاموا بدور بطولي للغاية</p>
+                <div class="content-meta" data-swiper-parallax="-900">
+                  <span>الحرب والجيش</span>
+                  <span>حركة ومغامرة</span>
                 </div>
               </div>
             </div>
@@ -150,6 +257,344 @@
       </div>
     </div>
   </div>
+
+  <div class="moveis-sec top_ten">
+    <h2 class="title-sec">ال 10 أفلام الأكثر مشاهدة فى مصر</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">1</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/01.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">2</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/02.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">3</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/03.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">4</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/04.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">5</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/05.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">6</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/07.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">7</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/01.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">8</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/02.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">9</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/03.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <span class="number">10</span>
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/04.webp"
+              alt="">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <div class="moveis-sec">
+    <h2 class="title-sec">الأكثر شهرة الآن</h2>
+    <div class="swiper swiper-movies">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/01.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/02.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/03.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/04.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/05.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/07.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/08.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/09.webp"
+              alt="">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <div class="moveis-sec big-poster">
+    <h2 class="title-sec">أعمال أصلية</h2>
+    <div class="swiper swiper-movies">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/01.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/02.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/03.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/04.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/05.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/07.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/08.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/09.webp"
+              alt="">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <div class="moveis-sec">
+    <h2 class="title-sec">اخترنا لك</h2>
+    <div class="swiper swiper-movies">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/01.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/02.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/03.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/04.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/05.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/movies/related/07.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/01.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/02.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/03.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/04.webp"
+              alt="">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <div class="moveis-sec">
+    <h2 class="title-sec">ظبَّط موودك</h2>
+    <div class="swiper swiper-movies">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/01.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/02.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/03.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/04.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/05.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/07.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/08.webp"
+              alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="img-poster">
+            <img src="https://templates.iqonic.design/streamit/html/frontend/assets/images/top-ten-number/09.webp"
+              alt="">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="footer-box">
+        <ul>
+          <li>
+            <a href="#">
+
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
