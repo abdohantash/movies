@@ -104,7 +104,7 @@ function handleSlideChange(paren_activeSlide) {
           },
         });
       }
-    }, 8000);
+    }, 10000);
   }
 }
 
@@ -123,3 +123,17 @@ window.onYouTubeIframeAPIReady = function() {
     handleSlideChange($(".load-iframe.video-loaded")[0]);
   }
 };
+
+
+$(document).ready(function(){
+  $('.hide-pass').on('click', function() {
+      $(this).siblings('.toggle-password').attr('type', 'text');
+      $(this).hide();
+      $(this).siblings('.show-pass').show();
+  });
+  $('.show-pass').on('click', function() {
+      $(this).siblings('.toggle-password').attr('type', 'password');
+      $(this).hide();
+      $(this).siblings('.hide-pass').show();
+  });
+});
