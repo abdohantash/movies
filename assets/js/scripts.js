@@ -34,10 +34,12 @@ var top_ten = new Swiper(".top_ten .swiper", {
   },
 });
 
-var tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+if (!window.YT) {
+  var tag = $("<script></script>").attr("src", "https://www.youtube.com/iframe_api");
+  var firstScriptTag = $("script").first();
+  firstScriptTag.parent().prepend(tag);
+}
 
 var swiper_logos = new Swiper(".swiper-logos", {
   spaceBetween: 20,
@@ -45,71 +47,79 @@ var swiper_logos = new Swiper(".swiper-logos", {
   freeMode: true,
   watchSlidesProgress: true,
 });
+
 var swiper_poster = new Swiper(".swiper-poster", {
   speed: 600,
-  parallax: true,
   loop: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
   thumbs: {
     swiper: swiper_logos,
   },
   on: {
-    slideChange: function (e) {
+    slideChange: function () {
       var activeSlide = this.slides[this.activeIndex];
-      console.log(activeSlide);
-
       handleSlideChange(activeSlide);
     },
     init: function () {
-      handleSlideChange();
+      handleSlideChange(this.slides[this.activeIndex]);
     },
   },
 });
 
 function handleSlideChange(paren_activeSlide) {
-  const loadIframeElements = document.querySelectorAll(".load-iframe");
-  loadIframeElements.forEach((element) => {
-    const iframe = element.querySelector("iframe");
-    if (iframe) {
+  $(".load-iframe").each(function () {
+    var element = $(this);
+    var iframe = element.find("iframe");
+    if (iframe.length) {
       iframe.remove();
     }
-    element.classList.remove("video-loaded");
+    element.removeClass("video-loaded");
   });
 
-  const activeSlide = paren_activeSlide.querySelector(".load-iframe");
-  if (activeSlide) {
-    const videoId = activeSlide.getAttribute("data-yt-id");
+  var activeSlide = $(paren_activeSlide).find(".load-iframe");
+  if (activeSlide.length) {
+    var videoId = activeSlide.attr("data-yt-id");
+    var iframeElement = $("<iframe></iframe>").attr({
+      id: "existing-iframe",
+      src: "https://www.youtube.com/embed/" + videoId + "?enablejsapi=1&rel=0&autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&disablekb=1",
+      allow: "autoplay; encrypted-media",
+      allowFullscreen: true
+    });
 
-    const iframeElement = document.createElement("iframe");
-    iframeElement.id = "existing-iframe";
-    iframeElement.src = `https://www.youtube.com/embed/${videoId}?enablejsapi=1&rel=0&autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&disablekb=1`;
-    iframeElement.allow = "autoplay; encrypted-media";
-    iframeElement.allowFullscreen = true;
+    activeSlide.append(iframeElement);
 
-    activeSlide.appendChild(iframeElement);
+    setTimeout(function () {
+      activeSlide.addClass("video-loaded");
 
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player("existing-iframe", {
-        events: {
-          onReady: onPlayerReady,
-          onStateChange: onPlayerStateChange,
-        },
-      });
-    }
-
-    function onPlayerReady(event) {
-      event.target.playVideo();
-    }
-
-    function onPlayerStateChange(event) {
-      if (event.data === YT.PlayerState.ENDED) {
-        player.seekTo(0);
-        player.playVideo();
+      if (window.YT && YT.Player) {
+        var player = new YT.Player("existing-iframe", {
+          events: {
+            onReady: onPlayerReady,
+            onStateChange: function (event) {
+              onPlayerStateChange(event, swiper_poster);
+            },
+          },
+        });
       }
-    }
-
-    setTimeout(() => {
-      activeSlide.classList.add("video-loaded");
-    }, 5000);
+    }, 8000);
   }
 }
+
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+function onPlayerStateChange(event, swiper) {
+  if (event.data === YT.PlayerState.ENDED) {
+    swiper.slideNext();
+  }
+}
+
+window.onYouTubeIframeAPIReady = function() {
+  if ($(".load-iframe.video-loaded").length) {
+    handleSlideChange($(".load-iframe.video-loaded")[0]);
+  }
+};
