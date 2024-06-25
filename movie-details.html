@@ -204,6 +204,14 @@
             </svg>
                 انشاء رابط العرض
             </button>
+            <button class="install-addons" data-bs-toggle="modal" data-bs-target="#choose-subtitle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                <path d="M5 5.96552H8.15M12 5.96552H10.25M8.15 5.96552H10.25M8.15 5.96552V5M10.25 5.96552C9.88076 7.28593 9.10754 8.53411 8.225 9.63103M5.975 12C6.68843 11.344 7.4942 10.5394 8.225 9.63103M8.225 9.63103C7.775 9.10345 7.145 8.24984 6.965 7.86364M8.225 9.63103L9.575 11.0345" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.02231 16.9777C7.07674 18.6978 7.26397 19.7529 7.90796 20.5376C8.07418 20.7401 8.25989 20.9258 8.46243 21.092C9.56878 22 11.2125 22 14.5 22C17.7875 22 19.4312 22 20.5376 21.092C20.7401 20.9258 20.9258 20.7401 21.092 20.5376C22 19.4312 22 17.7875 22 14.5C22 11.2125 22 9.56878 21.092 8.46243C20.9258 8.25989 20.7401 8.07418 20.5376 7.90796C19.7563 7.26676 18.707 7.07837 17 7.02303M7.02231 16.9777C5.30217 16.9233 4.24713 16.736 3.46243 16.092C3.25989 15.9258 3.07418 15.7401 2.90796 15.5376C2 14.4312 2 12.7875 2 9.5C2 6.21252 2 4.56878 2.90796 3.46243C3.07418 3.25989 3.25989 3.07418 3.46243 2.90796C4.56878 2 6.21252 2 9.5 2C12.7875 2 14.4312 2 15.5376 2.90796C15.7401 3.07418 15.9258 3.25989 16.092 3.46243C16.736 4.24713 16.9233 5.30217 16.9777 7.02231C16.9777 7.02231 16.9777 7.02231 17 7.02303M7.02231 16.9777L17 7.02303" stroke="currentColor" stroke-width="1.5" />
+                <path d="M13 19L13.8333 17M18 19L17.1667 17M13.8333 17L15.5 13L17.1667 17M13.8333 17H17.1667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+                  اختر لغة الترجمة
+              </button>
             <div class="">
               <button class="install-addons">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
@@ -228,7 +236,29 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#list-addons-watch">
                     <div class="accordion-body">
-                      تست
+                      <ul class="list-Quality">
+                        <li>
+                          <a href="#">
+                            <span class="Quality">1080</span>
+                            <span class="available">مجاني</span>
+                            <span class="size">2.4 GB</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="Quality">720</span>
+                            <span class="available">مجاني</span>
+                            <span class="size">1.4 GB</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="Quality">480</span>
+                            <span class="available">مجاني</span>
+                            <span class="size">800 MB</span>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -243,7 +273,29 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#list-addons-watch">
                     <div class="accordion-body">
-                      تست
+                      <ul class="list-Quality">
+                        <li>
+                          <a href="#">
+                            <span class="Quality">1080</span>
+                            <span class="available">مجاني</span>
+                            <span class="size">2.4 GB</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="Quality">720</span>
+                            <span class="available">مجاني</span>
+                            <span class="size">1.4 GB</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="Quality">480</span>
+                            <span class="available">مجاني</span>
+                            <span class="size">800 MB</span>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -292,6 +344,91 @@
       </div>
     </div>
   </footer>
+
+
+  <div class="modal fade modal-custom" id="choose-subtitle" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title">اختر الترجمة</h1>
+          <button type="button" class="btn-save" data-bs-dismiss="modal" aria-label="Close">
+            حفظ التغييرات
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="search-subtitle">
+            <input type="text" placeholder="ابحث هنا...">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+              <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <ul class="list-subtitle">
+            <li>
+              <input type="radio" id="eg" name="subtitle" checked>
+              <label for="eg">
+                <img src="https://cdn.countryflags.com/thumbs/egypt/flag-round-250.png" alt="">
+                <p>العربية</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                  <path d="M11.4743 17.3058C14.4874 14.0819 17.3962 11.8949 21.0501 8.79776C22.1437 7.87072 22.3126 6.24578 21.4547 5.09453C20.5429 3.87098 18.8103 3.62642 17.6376 4.59913C14.2907 7.37521 11.6868 10.0482 9.21679 12.9051C9.08718 13.055 9.02237 13.13 8.95511 13.1722C8.78453 13.2792 8.57138 13.2803 8.3997 13.1751C8.33199 13.1336 8.26707 13.0601 8.13722 12.9131L6.82103 11.4229C5.6201 10.0631 3.46608 10.2137 2.46339 11.7274C1.76171 12.7867 1.86569 14.1905 2.71567 15.1334L4.7796 17.4229C6.32334 19.1353 7.09521 19.9916 8.02185 19.9999C8.94849 20.0083 9.79043 19.1075 11.4743 17.3058Z" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="eg2" name="subtitle">
+              <label for="eg2">
+                <img src="https://cdn.countryflags.com/thumbs/egypt/flag-round-250.png" alt="">
+                <p>العربية</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                  <path d="M11.4743 17.3058C14.4874 14.0819 17.3962 11.8949 21.0501 8.79776C22.1437 7.87072 22.3126 6.24578 21.4547 5.09453C20.5429 3.87098 18.8103 3.62642 17.6376 4.59913C14.2907 7.37521 11.6868 10.0482 9.21679 12.9051C9.08718 13.055 9.02237 13.13 8.95511 13.1722C8.78453 13.2792 8.57138 13.2803 8.3997 13.1751C8.33199 13.1336 8.26707 13.0601 8.13722 12.9131L6.82103 11.4229C5.6201 10.0631 3.46608 10.2137 2.46339 11.7274C1.76171 12.7867 1.86569 14.1905 2.71567 15.1334L4.7796 17.4229C6.32334 19.1353 7.09521 19.9916 8.02185 19.9999C8.94849 20.0083 9.79043 19.1075 11.4743 17.3058Z" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="eg3" name="subtitle">
+              <label for="eg3">
+                <img src="https://cdn.countryflags.com/thumbs/egypt/flag-round-250.png" alt="">
+                <p>العربية</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                  <path d="M11.4743 17.3058C14.4874 14.0819 17.3962 11.8949 21.0501 8.79776C22.1437 7.87072 22.3126 6.24578 21.4547 5.09453C20.5429 3.87098 18.8103 3.62642 17.6376 4.59913C14.2907 7.37521 11.6868 10.0482 9.21679 12.9051C9.08718 13.055 9.02237 13.13 8.95511 13.1722C8.78453 13.2792 8.57138 13.2803 8.3997 13.1751C8.33199 13.1336 8.26707 13.0601 8.13722 12.9131L6.82103 11.4229C5.6201 10.0631 3.46608 10.2137 2.46339 11.7274C1.76171 12.7867 1.86569 14.1905 2.71567 15.1334L4.7796 17.4229C6.32334 19.1353 7.09521 19.9916 8.02185 19.9999C8.94849 20.0083 9.79043 19.1075 11.4743 17.3058Z" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="eg4" name="subtitle">
+              <label for="eg4">
+                <img src="https://cdn.countryflags.com/thumbs/egypt/flag-round-250.png" alt="">
+                <p>العربية</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                  <path d="M11.4743 17.3058C14.4874 14.0819 17.3962 11.8949 21.0501 8.79776C22.1437 7.87072 22.3126 6.24578 21.4547 5.09453C20.5429 3.87098 18.8103 3.62642 17.6376 4.59913C14.2907 7.37521 11.6868 10.0482 9.21679 12.9051C9.08718 13.055 9.02237 13.13 8.95511 13.1722C8.78453 13.2792 8.57138 13.2803 8.3997 13.1751C8.33199 13.1336 8.26707 13.0601 8.13722 12.9131L6.82103 11.4229C5.6201 10.0631 3.46608 10.2137 2.46339 11.7274C1.76171 12.7867 1.86569 14.1905 2.71567 15.1334L4.7796 17.4229C6.32334 19.1353 7.09521 19.9916 8.02185 19.9999C8.94849 20.0083 9.79043 19.1075 11.4743 17.3058Z" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="eg5" name="subtitle">
+              <label for="eg5">
+                <img src="https://cdn.countryflags.com/thumbs/egypt/flag-round-250.png" alt="">
+                <p>العربية</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                  <path d="M11.4743 17.3058C14.4874 14.0819 17.3962 11.8949 21.0501 8.79776C22.1437 7.87072 22.3126 6.24578 21.4547 5.09453C20.5429 3.87098 18.8103 3.62642 17.6376 4.59913C14.2907 7.37521 11.6868 10.0482 9.21679 12.9051C9.08718 13.055 9.02237 13.13 8.95511 13.1722C8.78453 13.2792 8.57138 13.2803 8.3997 13.1751C8.33199 13.1336 8.26707 13.0601 8.13722 12.9131L6.82103 11.4229C5.6201 10.0631 3.46608 10.2137 2.46339 11.7274C1.76171 12.7867 1.86569 14.1905 2.71567 15.1334L4.7796 17.4229C6.32334 19.1353 7.09521 19.9916 8.02185 19.9999C8.94849 20.0083 9.79043 19.1075 11.4743 17.3058Z" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="eg6" name="subtitle">
+              <label for="eg6">
+                <img src="https://cdn.countryflags.com/thumbs/egypt/flag-round-250.png" alt="">
+                <p>العربية</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                  <path d="M11.4743 17.3058C14.4874 14.0819 17.3962 11.8949 21.0501 8.79776C22.1437 7.87072 22.3126 6.24578 21.4547 5.09453C20.5429 3.87098 18.8103 3.62642 17.6376 4.59913C14.2907 7.37521 11.6868 10.0482 9.21679 12.9051C9.08718 13.055 9.02237 13.13 8.95511 13.1722C8.78453 13.2792 8.57138 13.2803 8.3997 13.1751C8.33199 13.1336 8.26707 13.0601 8.13722 12.9131L6.82103 11.4229C5.6201 10.0631 3.46608 10.2137 2.46339 11.7274C1.76171 12.7867 1.86569 14.1905 2.71567 15.1334L4.7796 17.4229C6.32334 19.1353 7.09521 19.9916 8.02185 19.9999C8.94849 20.0083 9.79043 19.1075 11.4743 17.3058Z" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
